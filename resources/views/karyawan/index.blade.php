@@ -53,8 +53,6 @@
             @endforelse
         </tbody>
     </table>
-
-    {{ $karyawans->links() }}
 </div>
 </body>
 </html>
