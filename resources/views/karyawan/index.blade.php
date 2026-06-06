@@ -37,8 +37,8 @@
                 <td>{{ $k->departemen }}</td>
                 <td>{{ $k->status }}</td>
                 <td>
-                    <a href="{{ route('karyawan.edit', $k) }}" class="btn btn-warning btn-sm">Edit</a>
-                    <form action="{{ route('karyawan.destroy', $k) }}" method="POST" style="display:inline"
+                    <a href="{{ route('karyawan.edit', $k->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                    <form action="{{ route('karyawan.destroy', $k->id) }}" method="POST" style="display:inline"
                         onsubmit="return confirm('Yakin hapus?')">
                         @csrf
                         @method('DELETE')
